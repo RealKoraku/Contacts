@@ -5,24 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Contacts"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="800" Width="1280">
+    <Grid Margin="0,10,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="581*"/>
+            <ColumnDefinition Width="59*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="0*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock TextWrapping="Wrap" Text="Contacts" Height="NaN" Margin="80,10,640,401" Width="NaN" FontFamily="Bahnschrift" FontSize="20" TextDecorations="Underline" Grid.RowSpan="2"/>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,91,560,0" Grid.RowSpan="2"/>
-        <Image Grid.RowSpan="2" Margin="252,36,398,248"/>
-        <TextBlock Grid.RowSpan="2" TextWrapping="Wrap" Text="First Name" Margin="419,39,304,364"/>
-        <TextBlock Grid.RowSpan="2" TextWrapping="Wrap" Text="Street Address" Margin="419,75,291,328"/>
-        <TextBlock Grid.RowSpan="2" TextWrapping="Wrap" Text="City" Margin="419,106,336,305"/>
-        <TextBlock Grid.RowSpan="2" TextWrapping="Wrap" Text="State" Margin="458,105,298,306"/>
-        <TextBlock Grid.RowSpan="2" TextWrapping="Wrap" Text="ZIP" Margin="502,105,254,306"/>
-        <TextBlock Grid.RowSpan="2" TextWrapping="Wrap" Text="Email" Margin="419,134,336,277"/>
-        <TextBlock Grid.RowSpan="2" TextWrapping="Wrap" Text="Phone" Margin="419,162,336,249"/>
-        
-        <TextBox Grid.RowSpan="2" TextWrapping="Wrap" Text="Search..." Margin="28,34,588,345" TextChanged="TextBox_TextChanged_2"/>
+        <TextBlock TextWrapping="Wrap" Text="Contacts" Height="NaN" Margin="584,0,452,727" FontFamily="Bahnschrift" FontSize="26" TextDecorations="Underline" Grid.RowSpan="2" FontStyle="Italic"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="2,104,817,10" Grid.RowSpan="2" FontFamily="Bahnschrift Light" FontSize="16"/>
+        <Image Grid.RowSpan="2" Margin="373,75,494,404"/>
+        <TextBlock Grid.RowSpan="2" TextWrapping="Wrap" Text="First Name" Margin="698,80,34,570" FontFamily="Bahnschrift Light" FontSize="18"/>
+        <TextBlock Grid.RowSpan="2" TextWrapping="Wrap" Text="Street Address" Margin="698,134,102,515" FontFamily="Bahnschrift Light" FontSize="18"/>
+        <TextBlock Grid.RowSpan="2" TextWrapping="Wrap" Text="City" Margin="699,189,177,460" RenderTransformOrigin="0.476,0.461" FontSize="18" FontFamily="Bahnschrift Light"/>
+        <TextBlock Grid.RowSpan="2" TextWrapping="Wrap" Text="State" Margin="946,189,75,460" FontSize="18" FontFamily="Bahnschrift Light"/>
+        <TextBlock Grid.RowSpan="2" TextWrapping="Wrap" Text="ZIP" Margin="1087,189,8,460" FontSize="18" FontFamily="Bahnschrift Light" Grid.ColumnSpan="2"/>
+        <TextBlock Grid.RowSpan="2" TextWrapping="Wrap" Text="Email" Margin="698,244,8,405" FontSize="18" FontFamily="Bahnschrift Light" Grid.ColumnSpan="2"/>
+        <TextBlock Grid.RowSpan="2" TextWrapping="Wrap" Text="Phone" Margin="698,299,8,350" FontSize="18" FontFamily="Bahnschrift Light" Grid.ColumnSpan="2"/>
+
+        <TextBox Grid.RowSpan="2" TextWrapping="Wrap" Text="Search..." Margin="28,34,843,685" FontFamily="Bahnschrift Light" FontSize="18"/>
+        <TextBlock Grid.RowSpan="2" TextWrapping="Wrap" Text="Website" Margin="374,420,8,233" RenderTransformOrigin="0.349,0.035" FontSize="18" FontFamily="Bahnschrift Light" Grid.ColumnSpan="2"/>
+        <TextBlock Grid.RowSpan="2" TextWrapping="Wrap" Text="Website address" Margin="374,386,610,275" FontFamily="Bahnschrift Light" FontSize="16"/>
+        <TextBlock Grid.RowSpan="2" TextWrapping="Wrap" Text="Notes" Margin="374,471,675,193" FontFamily="Bahnschrift Light" FontSize="16"/>
+        <TextBlock Grid.RowSpan="2" TextWrapping="Wrap" Text="Sample note" Margin="374,500,8,69" FontSize="18" Grid.ColumnSpan="2"/>
+        <Button Content="Delete Contact" Grid.RowSpan="2" Margin="946,651,14,38" FontFamily="Bahnschrift Light" FontSize="18"/>
+        <Button Content="Edit Contact" Grid.RowSpan="2" Margin="621,651,339,38" FontFamily="Bahnschrift Light" FontSize="18"/>
 
     </Grid>
 </Window>
